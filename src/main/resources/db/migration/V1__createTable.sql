@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS vendify;
+
 CREATE TABLE if not exists `employee` (
       `ID` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
       `firstName` varchar(320),

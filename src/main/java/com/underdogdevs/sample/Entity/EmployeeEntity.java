@@ -23,6 +23,5 @@ public class EmployeeEntity {
     @NonNull
     String lastName;
     @Column(name = "dob", columnDefinition = "datetime")
-    @NonNull
     Date dob;
 }

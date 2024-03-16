@@ -22,7 +22,8 @@ public class PlatformExceptionHandler {
     @ExceptionHandler({
         RuntimeException.class
     })
-    public ResponseEntity<ErrorResponse> serviceExceptionHandler(){
+    public ResponseEntity<ErrorResponse> serviceExceptionHandler(Exception e){
+        e.printStackTrace();
         ErrorResponse errorResponse = ErrorResponse.builder().description("number cannot be less than 5").build();
         return ResponseEntity.status(403).body(errorResponse);
     }
